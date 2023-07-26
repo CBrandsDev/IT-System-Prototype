@@ -1,10 +1,8 @@
-const header = document.querySelector('.header')
-const btn = document.querySelectorAll('.btn')
-const login = document.querySelector('.active-login')
+const header = document.querySelector(".header");
+const btn = document.querySelectorAll(".btn");
+const login = document.querySelector(".active-login");
 
 
-function activeLogin() {
-    btn.addEventListener('click', () => {
-        
-    })
-}
+btn.addEventListener("click", () => {
+  login.classList.toggle("hidden");
+});
