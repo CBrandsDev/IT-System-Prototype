@@ -75,3 +75,12 @@ body {
   width: 150px;
   height: 150px;
 }
+
+.login li a {
+    text-decoration: none;
+    color: #7e04c4;
+}
+
+.login li a:hover {
+    color: #649fff;
+}
