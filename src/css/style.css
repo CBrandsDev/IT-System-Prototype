@@ -22,12 +22,11 @@ body {
   justify-content: space-around;
   width: 100vw;
   height: 150px;
-  padding: 20px;
 }
 
 .header h3 {
   text-transform: uppercase;
-  margin-right: 20px;
+  text-align: center;
 }
 
 .header .btn {
@@ -53,10 +52,22 @@ body {
   scale: 0.95;
 }
 
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    gap: 10px;
+    width: 200px;
+}
+
 .header li,
 .header li a {
   list-style: none;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .header img {
