@@ -89,13 +89,27 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .active-login p {
     color: #fff;
     width: 150px;
+    font-size: 12px;
+    margin-top: 15px;
+}
 
+.active-login a {
+    text-decoration: none;
+    color: #8202cc;
+}
+
+.active-login a:hover {
+    color: white;
+}
+
+.active-login input:focus {
+    outline: 0;
 }
 
 .hidden {
