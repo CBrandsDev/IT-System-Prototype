@@ -78,7 +78,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 1;
   display: none;
 }
 
@@ -152,6 +152,26 @@ body {
   width: 370px;
   height: 450px;
   border-radius: 50px 5px;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  top: 130px;
+  margin-left: 530px;
+  overflow: hidden;
+  padding: 20px, 10px, 10px;
+  
+}
+
+.active-login::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 370px;
+  height: 450px;
+  background: linear-gradient(60deg, transparent, rgb(35, 35, 46));
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
 }
 
 .active-login::after{
@@ -161,9 +181,34 @@ body {
   left: -50%;
   width: 370px;
   height: 450px;
-  background: linear-gradient(60deg, transparent, rgb(35, 35, 46));
+  background: linear-gradient(60deg, transparent, yellow);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
 }
 
+@keyframes animate  {
+  0%
+  {
+    transform: rotate(0deg);
+    
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    
+  }
+}
+
+form
+{
+  position: absolute;
+  inset: 2px;
+  border-radius: 50px 5px;
+  z-index: 10;
+  background: #649fff;
+  padding: 30px 30px;
+}
 /* botão X */
 .active-login i {
   position: relative;
@@ -197,10 +242,10 @@ body {
 }
 
 .container {
-  display: flexbox;
+  display: flex;
   columns: 3;
   margin: 0;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -217,6 +262,11 @@ body {
   justify-content: center;
   max-width: 200px;
   gap: 12px;
+}
+
+.observations {
+  flex-wrap: nowrap;
+  height: 50px;
 }
 
 .hidden {
