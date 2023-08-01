@@ -10,26 +10,35 @@
       href="./src/assets/imgs/Circle-icons-computer.svg.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Sistema de TI</title>
   </head>
   <body>
-    <header class="header">
-      <img
-        src="./src/assets/imgs/eb753ea8f93bca3cf69e60fb5c4f1194.gif"
-        alt="logo"
-      />
-      <h3 class="title-name">La Ele Informaticas</h3>
-      <div class="login">
-        <button class="btn">Login</button>
+    <div class="main">
+      <header class="header">
+        <img
+          src="./src/assets/imgs/eb753ea8f93bca3cf69e60fb5c4f1194.gif"
+          alt="logo"
+        />
+        <h3 class="title-name">La Ele Informaticas</h3>
+        <div class="login">
+          <button class="btn">Login</button>
+        </div>
+      </header>
+      <div class="active-login hidden">
+        <input type="text" placeholder="Usuario" />
+        <input type="password" placeholder="Senha" />
+        <p>
+          Ainda não tem conta no site?
+          <a href="singup.html">Inscreva-se</a> agora
+        </p>
       </div>
-    </header>
-    <div class="active-login">
-      <input type="text" placeholder="Usuario" />
-      <input type="password" placeholder="Senha" />
-      <p>
-        Ainda não tem conta no site? <a href="singup.html">Inscreva-se</a> agora
-      </p>
     </div>
+    <div class="overlay"></div>
+
     <script src="./src/js/script.js"></script>
   </body>
 </html>
