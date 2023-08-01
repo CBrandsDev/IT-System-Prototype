@@ -6,68 +6,67 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  background-image: linear-gradient(to left, rgb(79, 145, 189), rgb(129, 122, 189), rgb(241, 222, 222));
+  background-image: linear-gradient(
+    to left,
+    rgb(79, 145, 189),
+    rgb(129, 122, 189),
+    rgb(241, 222, 222)
+  );
   background-size: 500% 100%;
   animation: degrade 5s infinite alternate;
 }
 
 @keyframes degrade {
-  0%{
-    background-position-x: 0% ;
+  0% {
+    background-position-x: 0%;
   }
-  100%{
-    background-position-x: 100% ;
+  100% {
+    background-position-x: 100%;
   }
-
 }
-
 
 .waves {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
-.wave1{
+.wave1 {
   animation: movewave1 6s ease-in-out infinite alternate;
 }
 
-@keyframes movewave1{
+@keyframes movewave1 {
   from {
     transform: translate(500px);
-
   }
 }
 
-.wave2{
+.wave2 {
   animation: movewave2 7s ease-in-out infinite alternate;
 }
 
-@keyframes movewave2{
+@keyframes movewave2 {
   from {
     transform: translate(700px);
-
   }
 }
 
-.wave3{
+.wave3 {
   animation: movewave3 4s ease-in-out infinite alternate;
 }
 
-@keyframes movewave3{
+@keyframes movewave3 {
   from {
     transform: translate(-200px);
-
   }
 }
 
@@ -96,7 +95,12 @@ body {
 
 .header h3 {
   text-transform: uppercase;
-  text-align: center;
+}
+
+.login {
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .header .btn {
@@ -131,7 +135,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 20px;
   gap: 10px;
   width: 200px;
 }
@@ -152,24 +155,20 @@ body {
   width: 370px;
   height: 450px;
   border-radius: 50px 5px;
-  z-index: 4;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   padding: 20px, 10px, 10px;
-  top: 130px;
   left: 37%;
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 10px;
-  transition: all 0.5s ease-in;
-
 }
 
-
-.active-login::before{
-  content: '';
+.active-login::before {
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -180,8 +179,8 @@ body {
   animation: animate 6s linear infinite;
 }
 
-.active-login::after{
-  content: '';
+.active-login::after {
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -193,41 +192,38 @@ body {
   animation-delay: -3s;
 }
 
-@keyframes animate  {
-  0%
-  {
+@keyframes animate {
+  0% {
     transform: rotate(0deg);
-    
   }
-  100%
-  {
+  100% {
     transform: rotate(360deg);
-    
   }
 }
 
-form
-{
+form {
   position: absolute;
   inset: 2px;
   border-radius: 50px 5px;
-  z-index: 10;
-  background-image: linear-gradient(to left, rgb(79, 145, 189), rgb(129, 122, 189), rgb(241, 222, 222));
+  z-index: 3;
+  background-image: linear-gradient(
+    to left,
+    rgb(79, 145, 189),
+    rgb(129, 122, 189),
+    rgb(241, 222, 222)
+  );
   padding: 30px 30px;
   background-size: 500% 100%;
   animation: degrade-login 5s infinite alternate;
-  z-index: 2;
-  
 }
 
-@keyframes degrade-login{
-  0%{
-    background-position-x: 0% ;
+@keyframes degrade-login {
+  0% {
+    background-position-x: 0%;
   }
-  100%{
-    background-position-x: 100% ;
+  100% {
+    background-position-x: 100%;
   }
-
 }
 /* botão X */
 .active-login i {
