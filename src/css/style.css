@@ -51,11 +51,14 @@ body {
   color: #fff;
   border: 2px solid #2f7cf8;
   cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in;
 }
 
 .header .btn:hover {
   background-color: #2f7cf8;
   border: none;
+  transition: all 0.3s ease-in;
 }
 
 .header .btn:focus {
@@ -109,6 +112,14 @@ body {
   gap: 10px;
   transition: all 0.5s ease-in;
   z-index: 10;
+}
+
+.active-login i {
+  position: relative;
+  top: -60%;
+  right: -100%;
+  color: #fff;
+  cursor: pointer;
 }
 
 .active-login p {
