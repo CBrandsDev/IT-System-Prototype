@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -13,6 +14,61 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  background-image: linear-gradient(to left, rgb(79, 145, 189), rgb(129, 122, 189), rgb(241, 222, 222));
+  background-size: 500% 100%;
+  animation: degrade 5s infinite alternate;
+}
+
+@keyframes degrade {
+  0%{
+    background-position-x: 0% ;
+  }
+  100%{
+    background-position-x: 100% ;
+  }
+
+}
+
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.wave1{
+  animation: movewave1 6s ease-in-out infinite alternate;
+}
+
+@keyframes movewave1{
+  from {
+    transform: translate(500px);
+
+  }
+}
+
+.wave2{
+  animation: movewave2 7s ease-in-out infinite alternate;
+}
+
+@keyframes movewave2{
+  from {
+    transform: translate(700px);
+
+  }
+}
+
+.wave3{
+  animation: movewave3 4s ease-in-out infinite alternate;
+}
+
+@keyframes movewave3{
+  from {
+    transform: translate(-200px);
+
+  }
 }
 
 .overlay {
