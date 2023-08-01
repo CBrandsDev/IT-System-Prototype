@@ -19,15 +19,29 @@
   <body>
     <div class="main">
       <header class="header">
-
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path 
-          class="wave1" fill="#0099ff" fill-opacity="1" d="M0,288L34.3,277.3C68.6,267,137,245,206,229.3C274.3,213,343,203,411,186.7C480,171,549,149,617,165.3C685.7,181,754,235,823,256C891.4,277,960,267,1029,240C1097.1,213,1166,171,1234,154.7C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-          <path 
-          class="wave2" fill="#0099ff" fill-opacity="1" d="M0,320L80,304C160,288,320,256,480,208C640,160,800,96,960,74.7C1120,53,1280,75,1360,85.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-          <path 
-          class="wave3" fill="#0099ff" fill-opacity="1" d="M0,192L40,192C80,192,160,192,240,197.3C320,203,400,213,480,229.3C560,245,640,267,720,250.7C800,235,880,181,960,160C1040,139,1120,149,1200,176C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            class="wave1"
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,288L34.3,277.3C68.6,267,137,245,206,229.3C274.3,213,343,203,411,186.7C480,171,549,149,617,165.3C685.7,181,754,235,823,256C891.4,277,960,267,1029,240C1097.1,213,1166,171,1234,154.7C1302.9,139,1371,149,1406,154.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+          <path
+            class="wave2"
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,320L80,304C160,288,320,256,480,208C640,160,800,96,960,74.7C1120,53,1280,75,1360,85.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+          <path
+            class="wave3"
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,192L40,192C80,192,160,192,240,197.3C320,203,400,213,480,229.3C560,245,640,267,720,250.7C800,235,880,181,960,160C1040,139,1120,149,1200,176C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
         </svg>
         <img
           src="./src/assets/imgs/eb753ea8f93bca3cf69e60fb5c4f1194.gif"
@@ -39,6 +53,10 @@
         </div>
       </header>
       <div class="active-login hidden">
+        <form action=""> 
+          
+        </form>
+
         <i id="exit" class="bi bi-x-circle-fill"></i>
         <input type="text" placeholder="Usuario" />
         <input type="password" placeholder="Senha" />
@@ -47,6 +65,34 @@
           Ainda não tem conta no site?
           <a href="singup.html">Inscreva-se</a> agora
         </p>
+      </div>
+      <div class="container">
+        <img
+          src="https://blog.accurate.com.br/wp-content/uploads/2021/08/Dia-da-Informatica-1280x720.png"
+          alt="primary img"
+          class="first"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+          perferendis ea enim hic dicta in ut, quas earum iste! Recusandae
+          molestiae distinctio tempora! Nisi molestias ipsum necessitatibus
+          reprehenderit minima velit?
+        </p>
+        <div class="services">
+        <label>Selecione um serviço:</label>
+        <select id="services" name="services">
+          <option value="formatacao">Formatação</option>
+          <option value="manutenção">Manutenção</option>
+          <option value="limpeza">Limpeza</option>
+          <option value="montagem">Montagem</option>
+          <option value="outro">Outro...</option>
+        </select>
+        <label>Selecione um local de atendimento:</label>
+        <select name="locals" id="locals" class="locals">
+          <option value="domicilio">A domicilio</option>
+          <option value="domicilio">Escritorio</option>
+        </select>
+      </div>
       </div>
     </div>
     <div class="overlay"></div>
