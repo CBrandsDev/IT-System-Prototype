@@ -16,12 +16,12 @@ body {
   overflow: hidden;
   background-image: linear-gradient(
     to left,
-    rgb(79, 145, 189),
-    rgb(129, 122, 189),
-    rgb(241, 222, 222)
+    #390096,
+    #DAF2FE,
+    #2C8BAC
   );
   background-size: 500% 100%;
-  animation: degrade 5s infinite alternate;
+  animation: degrade 10s infinite alternate;
 }
 
 @keyframes degrade {
@@ -41,7 +41,7 @@ body {
 }
 
 .wave1 {
-  animation: movewave1 6s ease-in-out infinite alternate;
+  animation: movewave1 10s ease-in-out infinite alternate;
 }
 
 @keyframes movewave1 {
@@ -51,7 +51,7 @@ body {
 }
 
 .wave2 {
-  animation: movewave2 7s ease-in-out infinite alternate;
+  animation: movewave2 10s ease-in-out infinite alternate;
 }
 
 @keyframes movewave2 {
@@ -61,7 +61,7 @@ body {
 }
 
 .wave3 {
-  animation: movewave3 4s ease-in-out infinite alternate;
+  animation: movewave3 10s ease-in-out infinite alternate;
 }
 
 @keyframes movewave3 {
@@ -145,11 +145,10 @@ body {
 }
 
 .active-login {
-  background: rgb(100, 159, 255);
+  background: #390096, #DAF2FE, #2C8BAC;
   background: linear-gradient(
     180deg,
-    rgba(100, 159, 255, 1) 20%,
-    rgba(47, 124, 248, 1) 75%
+    #390096, #DAF2FE, #2C8BAC
   );
   position: relative;
   width: 370px;
@@ -174,9 +173,9 @@ body {
   left: -50%;
   width: 370px;
   height: 450px;
-  background: linear-gradient(60deg, transparent, rgb(35, 35, 46));
+  background: linear-gradient(60deg, transparent, #390096, #DAF2FE, #2C8BAC);
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
+  animation: animate 9s linear infinite;
 }
 
 .active-login::after {
@@ -186,9 +185,9 @@ body {
   left: -50%;
   width: 370px;
   height: 450px;
-  background: linear-gradient(60deg, transparent, yellow);
+  background: linear-gradient(60deg, transparent, #cccad0, #1d93cf, #000000);
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
+  animation: animate 9s linear infinite;
   animation-delay: -3s;
 }
 
@@ -201,6 +200,7 @@ body {
   }
 }
 
+
 form {
   position: absolute;
   inset: 2px;
@@ -208,13 +208,11 @@ form {
   z-index: 3;
   background-image: linear-gradient(
     to left,
-    rgb(79, 145, 189),
-    rgb(129, 122, 189),
-    rgb(241, 222, 222)
+    #390096, #DAF2FE, #2C8BAC
   );
   padding: 30px 30px;
   background-size: 500% 100%;
-  animation: degrade-login 5s infinite alternate;
+  animation: degrade-login 10s infinite alternate;
   flex-direction: column;
 }
 
@@ -230,7 +228,7 @@ form {
 .active-login i {
   position: relative;
   top: -60%;
-  right: -100%;
+  right: 100%;
   color: #fff;
   cursor: pointer;
 }
@@ -238,20 +236,26 @@ form {
 /* paragrafo */
 .active-login p {
   color: #fff;
-  width: 150px;
-  font-size: 12px;
-  margin-top: 15px;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 220px;
+  
 }
 
 /* inscreva-se */
 .active-login a {
   text-decoration: none;
-  color: #8202cc;
+  color: white;
+  text-decoration: underline;
 }
 
 /* esqueceu a senha */
 .active-login a:hover {
   color: white;
+  text-align: center;
+  font-size: 10px;
+  display: flex;
+
 }
 
 .active-login input:focus {
