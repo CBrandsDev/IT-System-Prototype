@@ -284,6 +284,10 @@ form {
   text-align: center;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+}
+
+.informations p {
 }
 
 .container img {
@@ -299,9 +303,14 @@ form {
   gap: 12px;
 }
 
+.services select:focus {
+  outline: 0;
+}
+
 .observations {
   flex-wrap: nowrap;
   height: 50px;
+  outline: 0;
 }
 
 .hidden {
