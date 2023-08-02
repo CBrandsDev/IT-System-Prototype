@@ -253,7 +253,7 @@ form {
 .active-login i {
   position: relative;
   top: -15px;
-  left: 290px;
+  left: 305px;
   color: #fff;
   cursor: pointer;
 }
@@ -347,6 +347,4 @@ form {
   animation-direction: alternate;
 }
 
-#exit{
-  
-}
+
