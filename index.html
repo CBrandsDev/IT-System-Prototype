@@ -53,16 +53,17 @@
         </div>
       </header>
       <div class="active-login hidden">
-        <form action=""> 
-        <i id="exit" class="bi bi-x-circle-fill"></i>
-        <input type="text" placeholder="Usuario">
-        <input type="password" placeholder="Senha" />
-        <a href="">Esqueceu a senha?</a>
-        <p>
-          Ainda não tem conta no site?
-          <a href="singup.html">Inscreva-se</a> agora
-        </p>
-      </form>
+        <form action="">
+          <i id="exit" class="bi bi-x-circle-fill"></i>
+          <input type="text" required />
+          <label>Usuario</label>
+          <input type="password" required />
+          <label>Senha</label>
+          <button>Login</button>
+
+          <a href="#">Esqueceu a senha?</a>
+          <p>Ainda não tem conta no site? <a href="#">Inscreva-se</a> agora!</p>
+        </form>
       </div>
       <div class="container">
         <img
@@ -71,31 +72,31 @@
           class="first"
         />
         <div class="informations">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-          perferendis ea enim hic dicta in ut, quas earum iste! Recusandae
-          molestiae distinctio tempora! Nisi molestias ipsum necessitatibus
-          reprehenderit minima velit?
-        </p>
-      </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+            perferendis ea enim hic dicta in ut, quas earum iste! Recusandae
+            molestiae distinctio tempora! Nisi molestias ipsum necessitatibus
+            reprehenderit minima velit?
+          </p>
+        </div>
         <div class="services">
-        <label>Selecione um serviço:</label>
-        <select id="services" name="services">
-          <option value="formatacao">Formatação</option>
-          <option value="manutenção">Manutenção</option>
-          <option value="limpeza">Limpeza</option>
-          <option value="montagem">Montagem</option>
-          <option value="outro">Outro...</option>
-        </select>
-        <label>Selecione um local de atendimento:</label>
-        <select name="locals" id="locals" class="locals">
-          <option value="domicilio">A domicilio</option>
-          <option value="domicilio">Escritorio</option>
-        </select>
-        <label>Observações</label>
-        <input type="text" class="observations">
-        <button class="send-service">Enviar</button>
-      </div>
+          <label>Selecione um serviço:</label>
+          <select id="services" name="services">
+            <option value="formatacao">Formatação</option>
+            <option value="manutenção">Manutenção</option>
+            <option value="limpeza">Limpeza</option>
+            <option value="montagem">Montagem</option>
+            <option value="outro">Outro...</option>
+          </select>
+          <label>Selecione um local de atendimento:</label>
+          <select name="locals" id="locals" class="locals">
+            <option value="domicilio">A domicilio</option>
+            <option value="domicilio">Escritorio</option>
+          </select>
+          <label>Observações</label>
+          <input type="text" class="observations" />
+          <button class="send-service">Enviar</button>
+        </div>
       </div>
     </div>
     <div class="overlay"></div>
