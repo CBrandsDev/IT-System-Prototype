@@ -30,7 +30,7 @@ body {
 
 .waves {
   position: absolute;
-  bottom: 0;
+  bottom: -70px;
   left: 0;
   right: 0;
 }
@@ -57,6 +57,7 @@ body {
 
 .wave3 {
   animation: movewave3 10s ease-in-out infinite alternate;
+  
 }
 
 @keyframes movewave3 {
@@ -318,4 +319,34 @@ form {
 .hidden {
   display: none;
   transition: all 0.5s ease-in;
+}
+
+.enter{
+  background-image: blue;
+  padding: 5px 86px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@keyframes animalogin {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+
+.enter:hover{
+  animation-name: animalogin;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#exit{
+  
 }
