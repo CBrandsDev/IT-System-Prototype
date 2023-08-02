@@ -138,6 +138,10 @@ body {
   height: 100px;
 }
 
+.informations {
+  font-size: 15px;
+}
+
 .active-login {
   background: #390096, #daf2fe, #2c8bac;
   background: linear-gradient(180deg, #390096, #daf2fe, #2c8bac);
