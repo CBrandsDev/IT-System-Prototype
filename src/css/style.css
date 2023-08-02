@@ -247,8 +247,8 @@ form {
 /* botão X */
 .active-login i {
   position: relative;
-  top: -60%;
-  right: 100%;
+  top: -15px;
+  left: 290px;
   color: #fff;
   cursor: pointer;
 }
