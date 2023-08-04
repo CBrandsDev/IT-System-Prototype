@@ -160,6 +160,11 @@ body {
   justify-content: center;
 }
 
+.active-login .enter {
+    
+}
+
+
 form {
   display: flex;
   align-items: baseline;
@@ -294,8 +299,8 @@ form {
 
 
 .apresentation img {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
 
 .services {
@@ -304,6 +309,11 @@ form {
   justify-content: center;
   max-width: 200px;
   gap: 12px;
+  background-color: red;
+  padding: 25px;
+  border-radius: 10px;
+  color: #fff;
+  
 }
 
 .services select:focus {
