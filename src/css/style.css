@@ -281,7 +281,7 @@ form {
   outline: 0;
 }
 
-.container {
+.apresentation {
   display: flex;
   columns: 3;
   margin: 0;
@@ -293,7 +293,7 @@ form {
 }
 
 
-.container img {
+.apresentation img {
   width: 200px;
   height: 200px;
 }
