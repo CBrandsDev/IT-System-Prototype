@@ -6,8 +6,8 @@ const overlay = document.querySelector(".overlay");
 const exitBtn = document.getElementById("exit");
 const container = document.getElementById("container");
 const labels = document.querySelectorAll(".active-login label");
-
-
+const services = document.querySelector(".services");
+const menuBtn = document.querySelector(".service-menu");
 
 labels.forEach((label) => {
   label.innerHTML = label.innerText
@@ -18,6 +18,16 @@ labels.forEach((label) => {
     )
     .join("");
 });
+
+function serviceMenu() {
+  menuBtn.addEventListener("click", () => {
+    if (services.id === "hidden") {
+      services.removeAttribute("id", "hidden");
+    } else  {
+      services.id = ('hidden')
+    }
+  });
+}
 
 function loginEvent() {
   btn.addEventListener("click", () => {
@@ -33,3 +43,4 @@ function loginEvent() {
 }
 
 loginEvent();
+serviceMenu();

@@ -141,6 +141,9 @@ body {
 
 .informations {
   font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .active-login {
@@ -301,6 +304,7 @@ form {
 
 .informations {
   width: 400px;
+font-size: 17px;
 
 }
 
@@ -331,9 +335,7 @@ form {
   display: none;
   transition: all 0.5s ease-in;
 }
-.service-menu {
-  display: block;
-}
+
 
 .enter{
   background-image: blue;
@@ -377,8 +379,7 @@ form {
 }
 
 .service-menu {
-    left: 150px;
-    bottom: 50px;
+    left: 190px;
     position: relative;
     cursor: pointer;
     color: black;
