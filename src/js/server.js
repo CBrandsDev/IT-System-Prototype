@@ -22,7 +22,7 @@ app.post('/api/salvar_dados', (req, res) => {
 
   db.collection('minha_colecao').insertOne(dadosDoCliente, (err, result) => {
     if (err) {
-      console.error
+      console.error('Erro ao salvar')
     }
   })
 })
