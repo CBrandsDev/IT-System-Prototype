@@ -297,7 +297,7 @@ form {
   justify-content: left;
   flex-direction: row-reverse;
   padding: 30px;
-  width: 1200px;
+  width: 1300px;
   border: solid 1px red;
   gap: 30px;
   align-items: left;
@@ -316,7 +316,7 @@ text-align: justify;
 }
 
 .apresentation img {
-  width: 700px;
+  width: 800px;
   height: 530px;
   margin-left: 10px;
   border-radius: 10px;
@@ -385,6 +385,8 @@ text-align: justify;
   border-radius: 10px;
   color: #fff;
   z-index: 4;
+  margin-left: 10px;
+  /* border: solid 1px blue; */
  
   
 }
