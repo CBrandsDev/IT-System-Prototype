@@ -33,6 +33,7 @@ body {
   bottom: -70px;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .wave1 {
@@ -301,6 +302,7 @@ form {
   border: solid 1px red;
   gap: 30px;
   align-items: left;
+  z-index: 2;
 }
 
 .informations {
