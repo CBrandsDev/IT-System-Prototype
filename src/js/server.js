@@ -37,3 +37,6 @@ app.get("/api/dados", (req, res) => {});
 app.listen(3000, () => {
   console.log("Servidor na porta 5500");
 });
+
+
+console.log('teste1');
